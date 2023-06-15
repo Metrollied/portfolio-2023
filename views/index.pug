@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  
+  div#header
+    nav#navbar
+      a(href="#") Home
+      a(href="#aboutMe") About Me
+      a(href="#projectsSection") Projects
+      a(href="#contactSection") Contact
+    p#headerText Hi! I'm Ollie. I'm a Front End / Web Developer.
+    a(href="#aboutMe") 
+      img#downArrow(src="images/icons/down-arrow.svg", alt="")
+
+  div#aboutMe
+    h2 Welcome!
+    p Currently working in the events industry, I am a passionate developer specializing in Node.js and React. I've honed my skills to learn PHP and have created dynamic and responsive web applications. 
+    p I've also completed a Python Software Development bootcamp to broaden my skillset. 
+    p Explore my portfolio below to see more.
+  div#projectsSection
+    for project in projects
+      div.projectDiv
+        h1.projectTitle !{project.title}
+        a.projectLink(href=project.linkurl)
+          img.projectImg(src=project.imageurl, alt="")
+        p.projectDescription !{project.description}
+        div.skillsDiv
+          for skill in project.skills
+            div.skillDiv
+              img.skillIcon(src=skill.icon, alt="")
+              p.skillTitle !{skill.title}
+  div#contactSection
+    h1 Want to hear more? Get in touch! 
+    a(href="") My CV
+    a(href="https://github.com/Metrollied") GitHub
+    a(href="https://www.hyperiondev.com/portfolio/127901/") HyperionDev Profile
+    a(href="mailto:olliecrawford42@gmail.com") Email me
+
+  div#footer
