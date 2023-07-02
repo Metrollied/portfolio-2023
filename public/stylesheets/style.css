@@ -137,7 +137,7 @@ body > * {
 
 
 .projectDiv {
-  height: 800px;
+  min-height: 900px;
   width: 550px;
   display: flex;
   flex-direction: column;
@@ -161,7 +161,7 @@ body > * {
 
 .projectDescription {
   width: var(100% - 2rem);
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .projectLink {
@@ -216,7 +216,7 @@ body > * {
   text-decoration: none;
   color: white;
   font-size: 20px;
-  max-width: 100%;
+  width: 100%;
 }
 
 #contactSection > a:hover {
