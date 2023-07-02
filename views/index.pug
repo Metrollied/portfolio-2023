@@ -3,37 +3,54 @@ extends layout
 block content
   
   div#header
-    nav#navbar
-      a(href="#") Home
-      a(href="#aboutMe") About Me
-      a(href="#projectsSection") Projects
-      a(href="#contactSection") Contact
-    p#headerText Hi! I'm Ollie. I'm a Front End / Web Developer.
-    a(href="#aboutMe") 
-      img#downArrow(src="images/icons/down-arrow.svg", alt="")
-
+    p &#8203 
+    div#headerTitle
+      img#logo(src="images/logo.svg", alt="", fill="#000000")
+      h3#headerSubtext Junior Web Developer at LiveBuzz
+    div#headerArrow
+      p Click below to find out more
+      a(href="#aboutMe") 
+        img(src="/images/icons/down-arrow.svg", alt="")
   div#aboutMe
-    h2 Welcome!
-    p Currently working in the events industry, I am a passionate developer specializing in Node.js and React. I've honed my skills to learn PHP and have created dynamic and responsive web applications. 
-    p I've also completed a Python Software Development bootcamp to broaden my skillset. 
-    p Explore my portfolio below to see more.
+    h1 Welcome!
+    p 
+      | Currently working as a Junior Web Developer in the events industry, I am a self-taught, passionate developer specializing in Node.js and React. I've honed my skills to learn PHP and have created dynamic and responsive web applications. 
+      br
+      br
+      | Since leaving my previous career as a teacher, I have dedicated myself to becoming a self-taught web developer, acquiring a wide range of skills and knowledge in various web development technologies and frameworks, including completing a Python Software Development bootcamp to broaden my skillset. 
+      br
+      br
+      | Explore my portfolio below to see more.
+    p &#8203
+    div#links
+      a(href="https://www.linkedin.com/in/oliver-crawford-240177241/").link
+        img.linksIcon(src="/images/icons/linkedin.svg", alt="" target="_blank")
+      a(href="https://github.com/Metrollied").link
+        img.linksIcon(src="/images/icons/github.svg", alt="" target="_blank")
+      a(href="Ollie_Crawford_-_Web_Developer.pdf" target="_blank").link
+        img.linksIcon(src="/images/icons/cv.svg", alt="")
+      a(href="https://www.hyperiondev.com/portfolio/127901/").link
+        img.linksIcon(src="/images/icons/code.svg", alt="" target="_blank")
+    
   div#projectsSection
     for project in projects
       div.projectDiv
-        h1.projectTitle !{project.title}
+        a.projectTitle(href=project.linkurl) !{project.title}
         a.projectLink(href=project.linkurl)
           img.projectImg(src=project.imageurl, alt="")
         p.projectDescription !{project.description}
-        div.skillsDiv
-          for skill in project.skills
-            div.skillDiv
-              img.skillIcon(src=skill.icon, alt="")
-              p.skillTitle !{skill.title}
+          p Skills used:
+          div.skillsDiv
+            for skill in project.skills
+              div.skillDiv
+                img.skillIcon(src=skill.icon, alt="")
+                p.skillTitle !{skill.title}
   div#contactSection
-    h1 Want to hear more? Get in touch! 
-    a(href="") My CV
-    a(href="https://github.com/Metrollied") GitHub
-    a(href="https://www.hyperiondev.com/portfolio/127901/") HyperionDev Profile
+    h1 Want to know more? Get in touch! 
+    a(href="Ollie_Crawford_-_Web_Developer.pdf" target="_blank") My CV
+    a(href="https://github.com/Metrollied" target="_blank") GitHub
+    a(href="https://www.hyperiondev.com/portfolio/127901/" target="_blank") HyperionDev Profile
     a(href="mailto:olliecrawford42@gmail.com") Email me
 
   div#footer
+    p © Oliver Crawford 2023 
