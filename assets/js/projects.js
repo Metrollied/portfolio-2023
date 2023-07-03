@@ -101,7 +101,7 @@ let projects = [
     },
     {
         title: "Pub Landing Page",
-        description: "This simple website was create to serve as single landing page for a small business.",
+        description: "This single page website was create to serve as single landing page for a small business.",
         imageurl: "images/projects/pub.png",
         linkurl: "https://metrollied.github.io/westacre-stag/",
         skills: [skills.html, skills.css],
@@ -109,7 +109,7 @@ let projects = [
     },
     {
         title: "Car Splash Page",
-        description: "This small website was created to work on the UI and aesthetics of a website, and as a test for using Bootstrap.",
+        description: "This splash page website was created to work on the UI and aesthetics of a website, and as a test for using Bootstrap.",
         imageurl: "images/projects/car.png",
         linkurl: "https://metrollied.github.io/e-golf/",
         skills: [skills.html, skills.css],
