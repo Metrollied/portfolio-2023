@@ -43,24 +43,16 @@ let skills = {
 
 let projects = [
     {
-        title: "LiveBuzz Junior Web Developer",
-        description: "As a Junior Web Developer for LiveBuzz I design, produce and deploy websites for use in registration for trade events. Through this position I have learnt about PHP, maintaining and improving code for live, customer facing websites and interacting with a complex back-end. Another part of this position is to work as an onsite-technician, through the setting up and maintaining of registration areas at events both in the UK and abroad. ",
-        imageurl: "images/livebuzz.jpeg",
-        linkurl: "https://www.livebuzz.co.uk/",
-        skills: [skills.html, skills.css, skills.javascript, skills.php ]
-
-    },
-    {
-        title: "HyperionDev Bootcamp",
-        description: "This University of Manchester co-certified course taught Python, a popular front-end language. During the bootcamp, I developed a strong understanding of core Python concepts such as data types, variables, conditionals, loops, functions, and object-oriented programming. I honed my skills in writing clean, efficient, and well-documented code, fostering best practices in software development.",
-        imageurl: "images/hyperiondev.jpeg",
-        linkurl: "https://www.hyperiondev.com/portfolio/127901/",
-        skills: [skills.python]
-
+        title: "React Shop",
+        description: "This is a single-page application shop demo, using React and Fake Store API. I was very happy with the styling used on this site and felt it was very professional, as well as being mobile-friendly. The app demonstrates my ability to use async methods to get information from the \"Fake Store\" API and React states to store the user's basket - but not to checkout.",
+        imageurl: "images/projects/theshop.png",
+        linkurl: "https://metrollied.github.io/shopping-app/",
+        skills: [skills.html, skills.css, skills.javascript, skills.react,],
+        alignment: "left",
     },
     {
         title: "Login App",
-        description: "This app uses the MERN stack and Redux to create a safe login portal, complete with input sanitation and encryption through a secret key. Cookies are also used in this app to allow the user to remain logged in for a short time.",
+        description: "This login app was a challenge to create as it required two separate sections - a React frontend to display the page and a Node backend to connect to a MongoDB server. Creating this application taught me how to use cookies to allow users to stay logged in and how to properly sanitize user information and use bencrypt to hash sensitive passwords. I also employed Redux for the first time, a practise I wish I had started using much sooner in my projects.",
         imageurl: "images/Login-App.jpeg",
         linkurl: "https://login-app-cnoe.onrender.com/",
         skills: [skills.html, skills.css, skills.javascript, skills.node, skills.mongodb, skills.react,],
@@ -69,7 +61,7 @@ let projects = [
     {
         title: "Plant Inventory",
         description: "Inventory",
-		description: "Using CRUD methods and MongoDB as a back-end, this Plant Inventory app allows users to create, update, and keep track of plants and their stock levels through a MERN stack with Pug as a templating language. Hosted on Render, the app also allows for image upload and use.",
+		description: "One of the first projects I made that employed databases, in this case with MongoDB. I really enjoyed learning about and utilising non-SQL databases. Plant Inventory employs async methods to allow CRUD methods so that users can keep track of various plants and their quantities in a fictional store. I decided to go with plants as I am a big houseplant person, and at some point may need this to keep track of the jungle my office is becoming.",
         imageurl: "images/Plant-Inventory.jpeg",
         linkurl: "https://plantinventoryapp.onrender.com/",
         skills: [skills.html, skills.css, skills.javascript, skills.node, skills.mongodb, skills.pug],
@@ -77,7 +69,7 @@ let projects = [
     },
     {
         title: "React CV Generator",
-        description: "By employing React states this app allows a user to create a CV that is then dynamically displayed based on the information entered by the user. The app allows the user to choose the size of sections and automatically generates the CV based on this.",
+        description: "React is a very powerful framework for applications, as I discovered when making this CV generator, which was my first react project. By employing React states a user can enter information in a form that is then displayed below as a mock CV. Learning React was very challenging at first, but I have grown to love how it can make web applications dynamic in a relatively simple way.",
         imageurl: "images/projects/cv-app.png",
         linkurl: "https://metrollied.github.io/cv-app/",
         skills: [skills.html, skills.css, skills.javascript, skills.react,],
@@ -85,36 +77,28 @@ let projects = [
     },
     {
         title: "React Memory Game",
-        description: "By employing React states this app allows a user to create a CV that is then dynamically displayed based on the information entered by the user.",
+        description: "While improving my React capabilities, I created this Memory Game using React. Because React re-renders pages frequently, web applications can be made to completely change on a whim - as is the case here. Try to click all of the symbols without repeating any of them for the high score. The biggest challenge I had with this application was making it display correctly on all browsers, so I learnt a lot about what not to do when working with functions in web applications.",
         imageurl: "images/Memory-Game.jpeg",
         linkurl: "https://metrollied.github.io/memory-game/",
         skills: [skills.html, skills.css, skills.javascript, skills.react,],
         alignment: "left",
     },
     {
-        title: "React Shop",
-        description: "This is a single-page application shop demo, using React and Fake Store API. By using promises in conjunction with React states the site allows a user to add, remove, and view items in their basket (but not to checkout!)",
-        imageurl: "images/projects/theshop.png",
-        linkurl: "https://metrollied.github.io/shopping-app/",
-        skills: [skills.html, skills.css, skills.javascript, skills.react,],
-        alignment: "left",
+        title: "LiveBuzz Junior Web Developer",
+        description: "LiveBuzz is owned by SeeTickets, a worldwide events company. A a Web Developer for LiveBuzz I work as a part of a tight knit team of 11 developers who work together to design, create and deploy registration pages for corporate events.  This is mainly through PHP and Laravel, which although I had no experience with before starting at LiveBuzz I have picked up quickly, even to the point of creating pages completely solo. Click above to see one of the pages I made in action. In this role I also attend these events and set up Linux servers and general equipment to allow customers to register or print badges, and have so far worked abroad in three countries (and counting!)",
+        imageurl: "images/livebuzz.jpeg",
+        linkurl: "https://engineeringdesignshow-2023.reg.buzz/",
+        skills: [skills.html, skills.css, skills.javascript, skills.php ]
+
     },
     {
-        title: "Pub Landing Page",
-        description: "This single page website was create to serve as single landing page for a small business.",
-        imageurl: "images/projects/pub.png",
-        linkurl: "https://metrollied.github.io/westacre-stag/",
-        skills: [skills.html, skills.css],
-        alignment: "left",
+        title: "HyperionDev Bootcamp",
+        description: "This University of Manchester co-certified course taught Python, a popular front-end language. During the bootcamp, I developed a strong understanding of core Python concepts such as data types, variables, conditionals, loops, functions, and object-oriented programming. I honed my skills in writing clean, efficient, and well-documented code, fostering best practices in software development. It was great fun to spend dedicated time learning a new language to bolster my skills as a developer.",
+        imageurl: "images/hyperiondev.jpeg",
+        linkurl: "https://www.hyperiondev.com/portfolio/127901/",
+        skills: [skills.python]
+
     },
-    {
-        title: "Car Splash Page",
-        description: "This splash page website was created to work on the UI and aesthetics of a website, and as a test for using Bootstrap.",
-        imageurl: "images/projects/car.png",
-        linkurl: "https://metrollied.github.io/e-golf/",
-        skills: [skills.html, skills.css],
-        alignment: "left",
-    }
 ]
 
 module.exports = projects;
