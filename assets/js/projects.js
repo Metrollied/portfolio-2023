@@ -87,7 +87,7 @@ let projects = [
         title: "LiveBuzz Junior Web Developer",
         description: "LiveBuzz is owned by SeeTickets, a worldwide events company. As a Web Developer for LiveBuzz I work as a part of a tight knit team of 11 developers who work together to design, create and deploy registration pages for corporate events.  This is mainly through PHP and Laravel, which although I had no experience with before starting at LiveBuzz I have picked up quickly, even to the point of creating pages completely solo. Click above to see one of the pages I made in action. In this role I also attend these events and set up Linux servers and general equipment to allow customers to register or print badges, and have so far worked abroad in three countries (and counting!)",
         imageurl: "images/livebuzz.jpeg",
-        linkurl: "https://chsi-stitches-2024.reg.buzz/",
+        linkurl: "https://beta-international-2024.reg.buzz/",
         skills: [skills.html, skills.css, skills.javascript, skills.php ]
 
     },
