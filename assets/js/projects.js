@@ -38,10 +38,22 @@ let skills = {
     python: {
         "icon": "images/icons/python.svg",
         "title": "Python"
+    },
+    liquid: {
+        "icon": "images/icons/liquid.png",
+        "title": "Shopify Liquid"
     }
 }
 
 let projects = [
+    {
+        title: "Cake Agency Full Stack Developer",
+        description: "In my current role I work within a small team of developers primarily to create and maintain a series of Shopify Theme stores for various eCommerce businesses. To do this I use Shopify's own Liquid language and work with designers and account managers to manage multiple builds simultaneously. I also have learned in this role to use Webflow to create beautiful, animated sites, and have even worked on Apps for the Shopify App Store. Click on the picture above to see one of the sites I have built.",
+        imageurl: "images/projects/cake-agency.png",
+        linkurl: "https://mollieandsky.co.uk/",
+        skills: [skills.html, skills.css, skills.javascript, skills.liquid, skills.node],
+        alignment: "left",
+    },
     {
         title: "React Shop",
         description: "This is a single-page application shop demo, using React and Fake Store API. I was very happy with the styling used on this site and felt it was very professional, as well as being mobile-friendly. The app demonstrates my ability to use async methods to get information from the \"Fake Store\" API and React states to store the user's basket - but not to checkout.",
@@ -85,9 +97,9 @@ let projects = [
     },
     {
         title: "LiveBuzz Junior Web Developer",
-        description: "LiveBuzz is owned by SeeTickets, a worldwide events company. As a Web Developer for LiveBuzz I work as a part of a tight knit team of 11 developers who work together to design, create and deploy registration pages for corporate events.  This is mainly through PHP and Laravel, which although I had no experience with before starting at LiveBuzz I have picked up quickly, even to the point of creating pages completely solo. Click above to see one of the pages I made in action. In this role I also attend these events and set up Linux servers and general equipment to allow customers to register or print badges, and have so far worked abroad in three countries (and counting!)",
+        description: "LiveBuzz is owned by SeeTickets, a worldwide events company. As a Web Developer for LiveBuzz I worked as a part of a tight knit team of 11 developers who work together to design, create and deploy registration pages for corporate events.  This is mainly through PHP and Laravel, which although I had no experience with before starting at LiveBuzz I picked up quickly. In this role I also attended these events and set up Linux servers and general equipment to allow customers to register or print badges, and worked abroad in three countries.",
         imageurl: "images/livebuzz.jpeg",
-        linkurl: "https://beta-international-2024.reg.buzz/",
+        linkurl: "https://www.livebuzz.co.uk/",
         skills: [skills.html, skills.css, skills.javascript, skills.php ]
 
     },
